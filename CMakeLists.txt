@@ -12,9 +12,10 @@ find_package(geometry_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
+    "msg/FloatStamped.msg"
+    "msg/MotorPowerStamped.msg"
     "msg/TargetPathStamped.msg"
     "msg/SpeedProfileStamped.msg"
-    "msg/MotorPowerStamped.msg"
     "msg/TurnAngleStamped.msg"
     "msg/VehicleSpeedStamped.msg"
     DEPENDENCIES std_msgs geometry_msgs
