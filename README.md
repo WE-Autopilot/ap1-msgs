@@ -2,6 +2,13 @@
 
 These contain common message types for all packages in AP1.
 
+This package also contains shared service definitions for cross-team APIs.
+The point-registry workflow for mapping/planning uses:
+
+* `ap1_msgs/srv/CreateStoredPoint`
+* `ap1_msgs/srv/DeleteStoredPoint`
+* `ap1_msgs/srv/LookupStoredPoint`
+
 To use, modify your package.xml and CMakeLists.txt to include the following:
 
 ```xml
